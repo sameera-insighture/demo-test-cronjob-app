@@ -1,10 +1,10 @@
 name: >-
-  appcustomsameeraindependet-6f06113_custom-prod_app_3c0684f_env_7bec5ac
-  Pipeline (Skyu Generated)
+  appcustomsameeraindependet-6f06113_custom-dev_app_3c0684f_env_15b51e4 Pipeline
+  (Skyu Generated)
 'on':
   push:
-    tags:
-      - v*
+    branches:
+      - main
     paths-ignore:
       - .github/workflows/**
       - .trivyignore
@@ -12,10 +12,10 @@ name: >-
       - README.md
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_9db8d5b1-2a4f-4f01-946d-eda11c4df1f4
+    types: pipeline_b97f3055-91cc-42f0-87a5-52049aaa68b2
 env:
   ENCODED_PIPELINE_SECRET: >-
-    ${{secrets.DEMOTESTCRONJOBAPP_APPCUSTOMSAMEERAINDEPENDET6F06113_CUSTOMPROD_APP_3C0684F_ENV_7BEC5AC}}
+    ${{secrets.DEMOTESTCRONJOBAPP_APPCUSTOMSAMEERAINDEPENDET6F06113_CUSTOMDEV_APP_3C0684F_ENV_15B51E4}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
   BRANCH_NAME: >-
     ${{github.event.client_payload.branchName || github.event.branch ||
